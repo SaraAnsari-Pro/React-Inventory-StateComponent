@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+}
+
+.containerInventory{
+    width: 25%;  
+
+    padding: 0 6px;
+    border: solid 1px black;
+    margin: auto;
+    text-align: center; 
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+img{
+    width: 100%; 
+    height: 300px;
+ 
+}
+button{
+    width: 100px;
+    margin:auto;
+    margin-top: 15px;
+}
+.addMinus{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}

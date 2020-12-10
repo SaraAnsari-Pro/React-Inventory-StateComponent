@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+hr{
+  border: 4px groove lightblue;
+  border-radius: 5px;
+}
+.items{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+}

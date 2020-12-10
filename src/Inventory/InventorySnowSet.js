@@ -39,8 +39,7 @@ buttonAction (changest){
             availableSet: 90
         });
     }
-
-
+   
     render(){
         return(
             <div className="containerInventory">
@@ -54,7 +53,9 @@ buttonAction (changest){
             </div>
             <button onClick={() => this.resetButton()}> Reset </button>
         </div>
+        
         </div>
+        
 
 
         )

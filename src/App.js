@@ -7,15 +7,38 @@ import InventorySnowSet from './Inventory/InventorySnowSet';
 import './App.css';
 
 class App extends Component {
-  componentDidMount() {
 
+  constructor(props){
+    super(props);
+    this.state = {
+      data: 'welcome'
+    }
   }
+  getData(){
+    setTimeout(() => {
+      console.log('Our data is fetched');
+      this.setState({
+        data: 'WELCOME TO INVENTORY WEBSITE'
+      })
+    }, 1000)
+  }
+
+  componentDidMount(){
+    this.getData();
+  }
+
+  componentDidUpdate(){
+    console.log("componentDidUpdate",this.state.data)
+  }
+
 
   render() {
 
     return (
       <div className="container">
+        
         <h1>Stock Inventory</h1>
+        
         <hr></hr>
 
         <div className="items">
@@ -24,6 +47,8 @@ class App extends Component {
           <InventoryPants />
           <InventorySnowSet />
         </div>
+        {/* using componentDidMount */}
+        <div> <h1>{this.state.data} </h1></div> 
       </div>
     )
   }

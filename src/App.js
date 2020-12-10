@@ -46,9 +46,12 @@ class App extends Component {
           <InventorySocks />
           <InventoryPants />
           <InventorySnowSet />
+         
         </div>
+        <hr></hr>
         {/* using componentDidMount */}
         <div> <h1>{this.state.data} </h1></div> 
+        <hr></hr>
       </div>
     )
   }

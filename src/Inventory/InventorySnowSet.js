@@ -8,7 +8,7 @@ class InventorySnowSet extends Component{
         super(props);
         this.state={
             availableSet: 50,
-            soldSet:2
+            soldSet:4
         }
         // this.addButton = this.addButton.bind(this);
         // this.minusButton = this.minusButton.bind(this);
@@ -35,7 +35,7 @@ buttonAction (changest){
 }
     resetButton() {
         this.setState({
-            soldSet: 1,
+            soldSet: 4,
             availableSet: 90
         });
     }
